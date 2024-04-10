@@ -49,7 +49,7 @@ const CryptoDetails = () => {
     >
       <div
         id="2"
-        className="w-[65%] h-[75%] bg-gray-300 bg-opacity-75  rounded-lg text-white relative"
+        className="w-[75%] h-[85%] bg-gray-300 bg-opacity-75  rounded-lg text-white relative"
         onClick={(e) => e.stopPropagation()}
         // style={{
         //   backgroundImage: `url(${data?.image?.large})`,
@@ -251,7 +251,7 @@ const CryptoDetails = () => {
               </div>
               {/* links */}
 
-              <div className="flex w-full mt-4 justify-between">
+              <div className="flex md:w-full mt-4 justify-between">
                 <div className="flex flex-col">
                   <a
                     className="text-sm bg-gray-200 text-green px-1.5 py-0.5 my-1 rounded "
@@ -283,7 +283,7 @@ const CryptoDetails = () => {
                     </a>
                   )}
                 </div>
-                <div className="md:flex md:flex-col md:content-start ml-4 ">
+                <div className="md:flex md:flex-col md:content-start ml-4 hidden ">
                   <span className="text-sm capitalize text-gray-100 font-bold">
                     Sentiment
                   </span>
@@ -314,7 +314,7 @@ const CryptoDetails = () => {
                   </div>
 
                   {/* second div */}
-                  <div className="flex justify-between " id="8">
+                  <div className="md:flex md:justify-between " id="8">
                     <div
                       id="9"
                       className={`text-sm px-1 ml-2 font-medium flex items-center my-1 rounded uppercase bg-opacity-25
@@ -371,7 +371,7 @@ const CryptoDetails = () => {
               </div>
             </div>
 
-            <div className="absolute bottom-8 right-8 flex items-center">
+            <div className="absolute bottom-6 right-6 flex items-center max-[400px]:flex-col max-[400px]:gap-2 ">
               {data.links.repos_url.github[0] && (
                 <a
                   className="text-lg px-1 "
