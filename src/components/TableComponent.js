@@ -48,7 +48,7 @@ const TableComponent = () => {
   let { cryptoData, currency } = useContext(CryptoContext);
   return (
     <>
-      <div className="flex flex-col mt-11 border border-gray-100  rounded ">
+      <div className="flex flex-col mt-11 border border-gray-100  rounded overflow-hidden ">
         {cryptoData ? (
           <table className="w-full table-auto">
             <thead className="capitalize  text-md text-gray-200 font-bold border-b border-gray-100">
